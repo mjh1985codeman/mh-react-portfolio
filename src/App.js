@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import Nav from "./components/Nav";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Michael J Hodges</h1>
-      </header>
+    <div>
+      <Nav></Nav>
+      <main>
+        <About></About>
+      </main>
     </div>
   );
 }
