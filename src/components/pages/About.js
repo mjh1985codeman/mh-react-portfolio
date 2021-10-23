@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section className="my-5">
+    <section className="my-5 background-img">
       <h1 id="about">Who am I?</h1>
       <div className="my-2">
         <p>
