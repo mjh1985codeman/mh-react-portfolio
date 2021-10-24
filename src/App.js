@@ -3,7 +3,9 @@ import PortfolioContainer from "./components/PortfolioContainer";
 
 const App = () => (
   <div>
-    <h1 className="light-txt">Michael J Hodges</h1>
+    <header className="header-img">
+      <h1 className="light-txt">Michael J Hodges</h1>
+    </header>
     <PortfolioContainer />;
   </div>
 );

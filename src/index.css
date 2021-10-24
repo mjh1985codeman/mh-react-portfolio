@@ -58,3 +58,131 @@ body {
   border: 1px solid rgba(0, 0, 0, .5);
   margin: 1px;
 }
+
+/*My Work Section Styling */
+
+.work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.work h3 {
+  padding-left: 20px;
+}
+
+/* Image Behavior */
+
+img:hover{
+  opacity: 0.7;    
+}
+
+/* First Application Styling */
+
+#app-one-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#app-one-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remaining Application Stylings */
+
+.cards {
+  display: flex;
+  display: inline;
+  flex-direction: row;
+  text-align: center;
+}
+
+.cards img {
+  max-width: 60%;
+  height: auto;
+  flex: 1 0 50%;
+  position: relative;
+}
+
+.other-projects {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+
+}
+
+/* Media Queries Styling for Larger Screens */
+
+@media screen and (min-width: 1798px) {
+  .work {
+      max-width: 1798px;
+  }
+}
+  
+/* Media Queries Styling for Smaller Screens */
+
+@media screen and (max-width: 980px) {
+  header nav {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+/* Styling for Tablets and Smaller */
+@media screen and (max-width: 768px) {
+  
+}
+
+/* Styling Mobile Phones and Smaller */
+
+@media screen and (max-width: 575px) {
+  header {
+      display: flex;
+      flex-direction: column;
+  }
+
+  header nav ul li a {
+      font-size: 12x;
+      margin: 0;
+  }
+}
+
+/* Styling iPhone Screens */
+
+@media screen and (max-width: 376px) {
+  header nav ul li a {
+      font-size: 18px;
+  }
+
+  .about h2 {
+      font-size: 20px;
+  }
+
+  .about p {
+      text-align: center;
+      margin: 0;
+      font-size: 18px;
+  }
+
+  section h2 {
+      font-size: 20px;
+  }
+
+  .contact p {
+      font-size: 18px;
+  }
+
+  .contact a {
+      font-size: 18px;
+  }
+
+  footer p {
+      font-size: 16px;
+  }
+}
