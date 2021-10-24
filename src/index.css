@@ -64,6 +64,10 @@ body {
   font-family: 'IBM Plex Serif', serif;
 }
 
+.about-img {
+  max-width: auto;
+}
+
 /*My Work Section Styling */
 
 .work {
