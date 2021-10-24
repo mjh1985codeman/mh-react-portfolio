@@ -5,3 +5,16 @@
 AS AN employer looking for candidates with experience building single-page applications
 I WANT to view a potential employee's deployed React portfolio of work samples
 SO THAT I can assess whether they're a good candidate for an open position
+
+## Technologies Used:
+
+- react.js
+- js
+- css
+- bootstrap
+
+## Deployed URL Link: 
+https://mjh1985codeman.github.io/mh-react-portfolio/#about
+
+## Screenshot of Deployed App:
+[![deployed-React-PSS.jpg](https://i.postimg.cc/vHLLYcJC/deployed-React-PSS.jpg)](https://postimg.cc/4myhwNN1)
