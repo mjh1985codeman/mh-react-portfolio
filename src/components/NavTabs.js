@@ -4,7 +4,7 @@ import React from "react";
 function NavTabs(props) {
   const tabs = ["About", "Portfolio", "Contact", "Resume"];
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-pills nav-fill">
       {tabs.map((tab) => (
         <li className="nav-item" key={tab}>
           <a
@@ -13,7 +13,9 @@ function NavTabs(props) {
             // the current page is set through the handlePageChange props.
             onClick={() => props.handlePageChange(tab)}
             className={
-              props.currentPage === tab ? "nav-link active" : "nav-link"
+              props.currentPage === tab
+                ? "nav-link active light-txt nv-lnk-txt"
+                : "nav-link light-txt nv-lnk-txt"
             }
           >
             {tab}

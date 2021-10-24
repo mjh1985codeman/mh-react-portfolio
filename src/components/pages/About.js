@@ -9,7 +9,7 @@ function About() {
         <a href="https://github.com/mjh1985codeman">
           <img
             src={famImage}
-            alt="Picture of Michael Hodges w/ his family at the beach"
+            alt="Michael Hodges with his family at the beach"
           />
         </a>
         <p>

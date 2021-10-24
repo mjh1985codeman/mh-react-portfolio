@@ -48,42 +48,54 @@ function ContactForm() {
 
   // JSX
   return (
-    <section className="light-txt">
+    <section className="light-txt container">
       <h1>Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+        <div class="form-floating mb-3">
+          <label for="floatingInput">Your Name:</label>
           <input
             type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="First Name & Last Name"
             defaultValue={name}
             onBlur={handleChange}
             name="name"
           />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        <div class="form-floating mb-3">
+          <label for="floatingInput">Your Email address:</label>
           <input
             type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
             defaultValue={email}
             name="email"
             onBlur={handleChange}
           />
         </div>
+
         <div>
           <label htmlFor="message">Message:</label>
           <textarea
+            class="form-control"
             name="message"
+            placeholder="Don't be shy!"
             defaultValue={message}
             onBlur={handleChange}
             rows="5"
           />
+
           {/* only want this message to appear if the errorMessage contains an error message. We can condition this render in JSX with the following conditional statement:  */}
           {errorMessage && (
             <div>
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
-          <button type="submit">Submit</button>
+          <button type="submit" class="btn btn-primary p-2 m-2">
+            Submit
+          </button>
         </div>
       </form>
     </section>

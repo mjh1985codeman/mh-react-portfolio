@@ -3,10 +3,10 @@ import PortfolioContainer from "./components/PortfolioContainer";
 
 const App = () => (
   <div>
-    <header className="header-img">
-      <h1 className="light-txt">Michael J Hodges</h1>
+    <header className="header-img light-txt">
+      <h1 class="py-2 px-3">Michael J Hodges</h1>
     </header>
-    <PortfolioContainer />;
+    <PortfolioContainer />
   </div>
 );
 
