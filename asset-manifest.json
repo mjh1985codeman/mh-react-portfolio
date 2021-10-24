@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/mh-react-portfolio/static/css/main.dae882de.chunk.css",
+    "main.js": "/mh-react-portfolio/static/js/main.6c3ece02.chunk.js",
+    "main.js.map": "/mh-react-portfolio/static/js/main.6c3ece02.chunk.js.map",
+    "runtime-main.js": "/mh-react-portfolio/static/js/runtime-main.732a56b8.js",
+    "runtime-main.js.map": "/mh-react-portfolio/static/js/runtime-main.732a56b8.js.map",
+    "static/js/2.ecc9c9e9.chunk.js": "/mh-react-portfolio/static/js/2.ecc9c9e9.chunk.js",
+    "static/js/2.ecc9c9e9.chunk.js.map": "/mh-react-portfolio/static/js/2.ecc9c9e9.chunk.js.map",
+    "index.html": "/mh-react-portfolio/index.html",
+    "static/css/main.dae882de.chunk.css.map": "/mh-react-portfolio/static/css/main.dae882de.chunk.css.map",
+    "static/js/2.ecc9c9e9.chunk.js.LICENSE.txt": "/mh-react-portfolio/static/js/2.ecc9c9e9.chunk.js.LICENSE.txt",
+    "static/media/LOTRSSGame.d1d8bcbe.JPG": "/mh-react-portfolio/static/media/LOTRSSGame.d1d8bcbe.JPG",
+    "static/media/MHResume.b8e68b86.docx": "/mh-react-portfolio/static/media/MHResume.b8e68b86.docx",
+    "static/media/Note-Taker.de8af744.JPG": "/mh-react-portfolio/static/media/Note-Taker.de8af744.JPG",
+    "static/media/RecipeScreenshot_50.3f850374.jpg": "/mh-react-portfolio/static/media/RecipeScreenshot_50.3f850374.jpg",
+    "static/media/Team-Keeper-SS.ec286291.jpg": "/mh-react-portfolio/static/media/Team-Keeper-SS.ec286291.jpg",
+    "static/media/Weather-Dashboard.7c0b1d3f.JPG": "/mh-react-portfolio/static/media/Weather-Dashboard.7c0b1d3f.JPG",
+    "static/media/index.css": "/mh-react-portfolio/static/media/headerimg.f5c7c594.JPG",
+    "static/media/fam-pic.9e7516f9.jpg": "/mh-react-portfolio/static/media/fam-pic.9e7516f9.jpg",
+    "static/media/runbuddy2.81a0b2b0.JPG": "/mh-react-portfolio/static/media/runbuddy2.81a0b2b0.JPG",
+    "static/media/tech-blogger.f249847d.JPG": "/mh-react-portfolio/static/media/tech-blogger.f249847d.JPG",
+    "static/media/workday.21d80632.JPG": "/mh-react-portfolio/static/media/workday.21d80632.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.732a56b8.js",
+    "static/js/2.ecc9c9e9.chunk.js",
+    "static/css/main.dae882de.chunk.css",
+    "static/js/main.6c3ece02.chunk.js"
+  ]
+}
