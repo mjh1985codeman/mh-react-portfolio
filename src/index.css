@@ -131,6 +131,46 @@ img:hover{
   color: orange;
 }
 
+.resume-btn {
+  position: relative;
+  background-color: #5ba1c9;
+  border: none;
+  font-size: larger;
+  color: #FFFFFF;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.resume-btn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.resume-btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.resume-btn:hover {
+  opacity: 0.8;
+}
+
 /* Media Queries Styling for Larger Screens */
 
 @media screen and (min-width: 1798px) {

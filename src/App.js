@@ -1,5 +1,6 @@
 import React from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
+import Footer from "./components/Footer";
 
 const App = () => (
   <div>
@@ -7,6 +8,7 @@ const App = () => (
       <h1 class="py-2 px-3">Michael J Hodges</h1>
     </header>
     <PortfolioContainer />
+    <Footer />
   </div>
 );
 
