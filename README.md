@@ -17,4 +17,4 @@ SO THAT I can assess whether they're a good candidate for an open position
 https://mjh1985codeman.github.io/mh-react-portfolio/#about
 
 ## Screenshot of Deployed App:
-[![deployed-React-PSS.jpg](https://i.postimg.cc/vHLLYcJC/deployed-React-PSS.jpg)](https://postimg.cc/4myhwNN1)
+[![better-Port-SS.jpg](https://i.postimg.cc/WpDfrX7G/better-Port-SS.jpg)](https://postimg.cc/hhBrR86v)
