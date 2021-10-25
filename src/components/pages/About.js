@@ -14,12 +14,12 @@ function About() {
               alt="Michael Hodges with his family at the beach"
             />
           </a>
-          <p className="m-4">
+          <p className="m-4 about-txt">
             Hey there! Thanks for checking out my portfolio. My name is Michael
-            Hodges; here a few things about me. I am a Husband, Dad, Novice
+            Hodges; here are a few things about me. I am a Husband, Dad, Novice
             Developer and Working Professional. I have 10 Years of payment
             industry experience which includes client services, management,
-            reconciliation, pos support and navigating 3rd party integration.
+            reconciliation, POS support and navigating 3rd party integration.
             Currently working my way through a coding boot camp to break into
             the development community.
           </p>
