@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mh-react-portfolio/static/css/main.5942cd83.chunk.css",
-    "main.js": "/mh-react-portfolio/static/js/main.474fcd73.chunk.js",
-    "main.js.map": "/mh-react-portfolio/static/js/main.474fcd73.chunk.js.map",
+    "main.js": "/mh-react-portfolio/static/js/main.5be7abc8.chunk.js",
+    "main.js.map": "/mh-react-portfolio/static/js/main.5be7abc8.chunk.js.map",
     "runtime-main.js": "/mh-react-portfolio/static/js/runtime-main.732a56b8.js",
     "runtime-main.js.map": "/mh-react-portfolio/static/js/runtime-main.732a56b8.js.map",
     "static/js/2.ecc9c9e9.chunk.js": "/mh-react-portfolio/static/js/2.ecc9c9e9.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/Weather-Dashboard.7c0b1d3f.JPG": "/mh-react-portfolio/static/media/Weather-Dashboard.7c0b1d3f.JPG",
     "static/media/index.css": "/mh-react-portfolio/static/media/headerimg.f5c7c594.JPG",
     "static/media/fam-pic.9e7516f9.jpg": "/mh-react-portfolio/static/media/fam-pic.9e7516f9.jpg",
+    "static/media/holidaychaosSS.97055946.JPG": "/mh-react-portfolio/static/media/holidaychaosSS.97055946.JPG",
     "static/media/runbuddy2.81a0b2b0.JPG": "/mh-react-portfolio/static/media/runbuddy2.81a0b2b0.JPG",
     "static/media/tech-blogger.f249847d.JPG": "/mh-react-portfolio/static/media/tech-blogger.f249847d.JPG",
     "static/media/workday.21d80632.JPG": "/mh-react-portfolio/static/media/workday.21d80632.JPG"
@@ -26,6 +27,6 @@
     "static/js/runtime-main.732a56b8.js",
     "static/js/2.ecc9c9e9.chunk.js",
     "static/css/main.5942cd83.chunk.css",
-    "static/js/main.474fcd73.chunk.js"
+    "static/js/main.5be7abc8.chunk.js"
   ]
 }
