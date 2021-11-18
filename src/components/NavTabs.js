@@ -6,6 +6,7 @@ function NavTabs(props) {
   return (
     <ul className="nav nav-pills nav-fill">
       {tabs.map((tab) => (
+        //make sure you have the key name here!!!
         <li className="nav-item" key={tab}>
           <a
             href={"#" + tab.toLowerCase()}

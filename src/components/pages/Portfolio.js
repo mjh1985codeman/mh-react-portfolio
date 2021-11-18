@@ -7,35 +7,37 @@ import techBloggerImage from "../../assets/projects/tech-blogger.JPG";
 import teamkeeperImage from "../../assets/projects/Team-Keeper-SS.jpg";
 import weatherdashboardImage from "../../assets/projects/Weather-Dashboard.JPG";
 import notetakerImage from "../../assets/projects/Note-Taker.JPG";
+import holidayImage from "../../assets/projects/holidaychaosSS.JPG";
 
 function Portfolio() {
   return (
     <section className="my-5 background-img">
       <h1 id="about">Checkout my Projects below!</h1>
-      <div className="container">
-        <div className="card mb-3">
-          <a href="https://lotr-rpg.herokuapp.com/">
-            <img
-              src={lotrImage}
-              className="card-img-top img-thumbnail"
-              alt="Screenshot of the Lord of the Rings Project"
-            />
-          </a>
-          <div className="card-body">
-            <h5 className="card-title">
-              LOTR Text Adventure Game. Full-Stack application Built using
-              MySQL2, Sequelize, Javascript, Handlebars Templating Engine,
-              HowlerJS w/ user Authentication incorporating Express-Sessions and
-              BCRYPT.
-            </h5>
-            <p className="card-text">
-              Text-Based game that a user can sign into play where they can
-              create a character and go through the game in which their score is
-              dependant on the number of "wise" choices they make throughout the
-              game.
-            </p>
-          </div>
+      <div className="card mb-3">
+        <a href="https://mh-holiday-chaos-coordinator.herokuapp.com/">
+          <img
+            src={holidayImage}
+            className="card-img-top img-thumbnail"
+            alt="Screenshot of the Holiday Chaos Coordinator project"
+          />
+        </a>
+        <div className="card-body">
+          <h5 className="card-title">
+            Holiday-Chaos-Coordinator!!! This FULL MERN Stack application was
+            built using JavaScript, REACT, React-Router, MUI, Node.Js,
+            Express.Js, GraphQL, ApolloGraphQL, MongoDB, MonGoose w/JSON Web
+            Token authentication and deployed via Heroku.
+          </h5>
+          <p className="card-text">
+            The holidays are fast approaching and you could use a hand in
+            keeping your shopping list in order. Holiday Chaos Coordinator
+            allows you to search the Target API to search products then save
+            products to various shopping lists. We hope this app fills you with
+            holiday cheer!
+          </p>
         </div>
+      </div>
+      <div className="container">
         <div className="container">
           <div className="card mb-3">
             <a href="https://mjh1985codeman.github.io/Recipe-Generator/">
