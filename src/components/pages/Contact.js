@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers";
+import {
+  validateEmail,
+  validateName,
+  validateMessage,
+} from "../../utils/helpers";
 import axios from "axios";
 
 function ContactForm() {
@@ -12,15 +16,18 @@ function ContactForm() {
     message: "",
   });
 
-  //form Id from formspark: https://dashboard.formspark.io/workspaces/T57Vw1Sh/forms/hBjgobgE/settings
+  //form Id from formspark: https://dashboard.formspark.io/
   const formId = "hBjgobgE";
-  const formSparkUrl = "https://submit-form.com/hBjgobgE";
+  const formSparkUrl = `https://submit-form.com/${formId}`;
 
   const { name, email, message } = formState;
 
   const [errorMessage, setErrorMessage] = useState("");
 
+  const [successMessage, setSuccessMessage] = useState("");
+
   function handleChange(e) {
+    //Email Validation
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
       console.log(isValid);
@@ -28,13 +35,45 @@ function ContactForm() {
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
       } else {
-        if (!e.target.value.length) {
+        if (!e.target.value) {
           setErrorMessage(`${e.target.name} is required.`);
         } else {
           setErrorMessage("");
         }
       }
     }
+
+    //Name Validation
+    if (e.target.name === "name") {
+      const isValid = validateName(e.target.value);
+      console.log(isValid);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage("Your name is required.");
+      } else {
+        if (!e.target.value) {
+          setErrorMessage(`${e.target.name} is required.`);
+        } else {
+          setErrorMessage("");
+        }
+      }
+    }
+    //Message Validation
+    if (e.target.name === "message") {
+      const isValid = validateMessage(e.target.value);
+      console.log(isValid);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage("Your message is required.");
+      } else {
+        if (!e.target.value) {
+          setErrorMessage(`${e.target.name} is required.`);
+        } else {
+          setErrorMessage("");
+        }
+      }
+    }
+
     //we're using the setFormState function to update the formState value for the name property.
     //We assign the value taken from the input field in the UI with e.target.value and assign this value to the
     //property formState.name. We use the spread operator, ...formState, so we can retain the other key-value pairs in this object. Without the spread operator,
@@ -48,15 +87,13 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("formState: ", formState);
-
     const payload = formState;
-
-    try {
-      const result = axios.post(formSparkUrl, payload);
-      console.log("result: ", result);
-    } catch (error) {
-      console.log("error: ", error);
+    if (!errorMessage) {
+      try {
+        axios.post(formSparkUrl, payload);
+      } catch (error) {
+        alert("Uh Oh looks like there was an error: ", error);
+      }
     }
   }
 
@@ -107,6 +144,7 @@ function ContactForm() {
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
+
           <button type="submit" class="btn btn-primary p-2 m-2">
             Submit
           </button>
