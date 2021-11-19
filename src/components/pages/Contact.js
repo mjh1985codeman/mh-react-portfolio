@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import axios from "axios";
 
 function ContactForm() {
   //the Hook that'll manage the form data
@@ -10,6 +11,10 @@ function ContactForm() {
     email: "",
     message: "",
   });
+
+  //form Id from formspark: https://dashboard.formspark.io/workspaces/T57Vw1Sh/forms/hBjgobgE/settings
+  const formId = "hBjgobgE";
+  const formSparkUrl = "https://submit-form.com/hBjgobgE";
 
   const { name, email, message } = formState;
 
@@ -43,7 +48,16 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
+    console.log("formState: ", formState);
+
+    const payload = formState;
+
+    try {
+      const result = axios.post(formSparkUrl, payload);
+      console.log("result: ", result);
+    } catch (error) {
+      console.log("error: ", error);
+    }
   }
 
   // JSX
@@ -66,13 +80,13 @@ function ContactForm() {
         <div class="form-floating mb-3">
           <label for="floatingInput">Your Email address:</label>
           <input
-            type="email"
+            type="text"
             class="form-control"
             id="floatingInput"
-            placeholder="name@example.com"
+            placeholder="Your Email"
             defaultValue={email}
-            name="email"
             onBlur={handleChange}
+            name="email"
           />
         </div>
 
