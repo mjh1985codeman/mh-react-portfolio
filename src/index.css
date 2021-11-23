@@ -64,6 +64,19 @@ body {
   font-family: 'IBM Plex Serif', serif;
 }
 
+.success-text {
+  margin: 2px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(252, 246, 246);
+  padding: 2px;
+  display: flex;
+  font-size: 42px;
+  align-items: center;
+  justify-content: center;   
+  color: var(--dark)    
+}
+
 .about-img {
   max-width: auto;
 }

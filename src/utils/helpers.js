@@ -14,6 +14,6 @@ export function validateName(name) {
 }
 
 export function validateMessage(message) {
-  let re = /^[a-zA-Z0-9" "/!@#,$%^&*()_+.=-]{1,1000}$/;
+  let re = /^.{1,1000}$/;
   return re.test(String(message));
 }

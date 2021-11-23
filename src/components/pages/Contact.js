@@ -26,11 +26,10 @@ function ContactForm() {
 
   const [successMessage, setSuccessMessage] = useState("");
 
-  function handleChange(e) {
+  function verifyForm(e) {
     //Email Validation
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-      console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
@@ -46,7 +45,6 @@ function ContactForm() {
     //Name Validation
     if (e.target.name === "name") {
       const isValid = validateName(e.target.value);
-      console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage("Your name is required.");
@@ -58,19 +56,13 @@ function ContactForm() {
         }
       }
     }
+
     //Message Validation
     if (e.target.name === "message") {
       const isValid = validateMessage(e.target.value);
-      console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage("Your message is required.");
-      } else {
-        if (!e.target.value) {
-          setErrorMessage(`${e.target.name} is required.`);
-        } else {
-          setErrorMessage("");
-        }
       }
     }
 
@@ -81,8 +73,6 @@ function ContactForm() {
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
-
-    console.log("errorMessage", errorMessage);
   }
 
   function handleSubmit(e) {
@@ -94,6 +84,7 @@ function ContactForm() {
       } catch (error) {
         alert("Uh Oh looks like there was an error: ", error);
       }
+      setSuccessMessage("**Thank You!  I'll be in touch shortly!**");
     }
   }
 
@@ -108,9 +99,9 @@ function ContactForm() {
             type="text"
             class="form-control"
             id="floatingInput"
+            onBlur={verifyForm}
             placeholder="First Name & Last Name"
             defaultValue={name}
-            onBlur={handleChange}
             name="name"
           />
         </div>
@@ -120,9 +111,9 @@ function ContactForm() {
             type="text"
             class="form-control"
             id="floatingInput"
+            onBlur={verifyForm}
             placeholder="Your Email"
             defaultValue={email}
-            onBlur={handleChange}
             name="email"
           />
         </div>
@@ -132,9 +123,10 @@ function ContactForm() {
           <textarea
             class="form-control"
             name="message"
+            onBlur={verifyForm}
+            id="floatingInput"
             placeholder="Don't be shy!"
             defaultValue={message}
-            onBlur={handleChange}
             rows="5"
           />
 
@@ -142,6 +134,11 @@ function ContactForm() {
           {errorMessage && (
             <div>
               <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          {successMessage && (
+            <div>
+              <p className="success-text">{successMessage}</p>
             </div>
           )}
 
